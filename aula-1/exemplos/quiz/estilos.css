@@ -1,0 +1,142 @@
+body {
+    background: #d7dbd8;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.container {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.titulo {
+    color: #cf4e7d;
+    font-size: 60px;
+    text-shadow: 3px 3px 0px #a04ecf;
+}
+
+.pergunta {
+    border-top: 1px solid #333;
+    padding: 20px 0;
+}
+
+.enunciado {
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
+.pergunta:first-child {
+    border-top: 0;
+}
+
+.pergunta .respostas {
+    display: flex;
+    flex-direction: column;
+}
+
+.pergunta .respostas .alternativa label, .pergunta .respostas .alternativa input {
+    cursor: pointer;
+}
+.pergunta .respostas .alternativa {
+    margin: 5px 0;
+}
+
+.correto, .errado {
+    padding: 7px;
+    margin: 15px 0;
+    text-align: center;
+    display: none;
+}
+
+.correto {
+    background: #b4edc2;
+    border: 1px solid #086e39;
+}
+
+.errado {
+    background: #f7aa77;
+    border: 1px solid #ad5418;
+}
+
+@media(max-width: 749px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/**
+* processa respostas 
+*/
+/* Pergunta 1 */
+#pergunta-1:has(.alternativa input:checked) .errado {
+    display: block;
+}
+#pergunta-1:has(#pergunta-1-resposta-1:checked) .correto {
+    display: block;
+}
+#pergunta-1:has(#pergunta-1-resposta-1:checked) .errado {
+    display: none;
+}
+
+/* Pergunta 2 */
+#pergunta-2:has(.alternativa input:checked) .errado {
+    display: block;
+}
+#pergunta-2:has(#pergunta-2-resposta-3:checked) .correto {
+    display: block;
+}
+#pergunta-2:has(#pergunta-2-resposta-3:checked) .errado {
+    display: none;
+}
+
+/* Pergunta 3 */
+#pergunta-3:has(.alternativa input:checked) .errado {
+    display: block;
+}
+#pergunta-3:has(#pergunta-3-resposta-5:checked) .correto {
+    display: block;
+}
+#pergunta-3:has(#pergunta-3-resposta-5:checked) .errado {
+    display: none;
+}
+
+/* Pergunta 4 */
+#pergunta-4:has(.alternativa input:checked) .errado {
+    display: block;
+}
+#pergunta-4:has(#pergunta-4-resposta-2:checked) .correto {
+    display: block;
+}
+#pergunta-4:has(#pergunta-4-resposta-2:checked) .errado {
+    display: none;
+}
+
+/* Pergunta 5 */
+#pergunta-5:has(.alternativa input:checked) .errado {
+    display: block;
+}
+#pergunta-5:has(#pergunta-5-resposta-4:checked) .correto {
+    display: block;
+}
+#pergunta-5:has(#pergunta-5-resposta-4:checked) .errado {
+    display: none;
+}
+
+.todas-certas {
+    font-size: 30px;
+    text-align: center;
+    background: #b4edc2;
+    border: 1px solid #086e39;
+    padding: 25px;
+    margin: 15px 0;
+    text-align: center;
+    display: none;
+}
+
+body:has(#pergunta-5-resposta-4:checked):has(#pergunta-4-resposta-2:checked):has(#pergunta-3-resposta-5:checked):has(#pergunta-2-resposta-3:checked):has(#pergunta-1-resposta-1:checked) .todas-certas {
+    display: block;
+}
