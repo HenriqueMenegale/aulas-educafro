@@ -6,7 +6,7 @@ A página deve conter:
 - Um título principal
 - Um substitulo
 - Pelo menos 2 parágrafos
-- Uma lista de igredientes
+- Uma lista de ingredientes
 - Uma imagem da receita
 - No final da página, adicione um link que leva para https://educafrotech.educafro.org.br/
 
