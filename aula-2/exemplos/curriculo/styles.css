@@ -1,0 +1,89 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background: url('bg.png') #d5e3d9;
+    line-height: 1.5rem;
+}
+
+.container {
+    width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 30px 0;
+    border-radius: 20px 0 20px 0;
+}
+
+#personal-info {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    margin: 0 0 30px 0;
+}
+
+#personal-info .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 0 40px 0 0;
+    border: 3px solid #fff;
+    box-shadow: 0px 5px 0px #400f66;
+}
+
+#personal-info .age, #personal-info .email {
+    font-style:italic;
+    line-height: 1rem;
+    margin-bottom: 5px;
+}
+
+#personal-info .info {
+    color: #616161;
+}
+
+#personal-info .name {
+    font-size: 1.8rem;
+    color: #000;
+    margin: 0 0 15px 0;;
+}
+section {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 30px;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+section h3 {
+    color: #5c1691;
+    font-weight: 600px;
+    font-size: 1.5rem;
+}
+
+#about {
+    background: #400f66;
+    color: #fff;
+}
+
+#about h3 {
+    color: #fff;
+}
+.item-list {
+    padding: 0;
+}
+
+.item-list li {
+    list-style: none;
+    margin: 10px 0;
+    padding: 5px 0 5px 15px;
+    border-left: 2px solid #88c3e3;
+}
+
+.item-list li .title {
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+.item-list li p {
+    margin: 0;
+}
