@@ -1,0 +1,9 @@
+body {
+    background: url('bg.jpg');
+}
+
+.container {
+    width: 750px;
+    margin: 10px auto;
+}
+
