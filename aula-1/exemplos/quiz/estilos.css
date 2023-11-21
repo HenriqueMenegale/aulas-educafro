@@ -4,8 +4,7 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    line-height: 1.5em;
+    line-height: 1.2rem;
 }
 
 .container {
@@ -15,7 +14,7 @@ body {
 
 .titulo {
     color: #cf4e7d;
-    font-size: 60px;
+    font-size: 3rem;
     text-shadow: 3px 3px 0px #a04ecf;
 }
 
@@ -25,8 +24,8 @@ body {
 }
 
 .enunciado {
-    font-size: 1.3em;
-    line-height: 1.4em;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
 }
 .pergunta:first-child {
     border-top: 0;
@@ -127,7 +126,7 @@ body {
 }
 
 .todas-certas {
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
     background: #b4edc2;
     border: 1px solid #086e39;
