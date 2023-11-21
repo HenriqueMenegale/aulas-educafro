@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos display</title>
+
+    <style>
+        .title { text-align: center; }
+        
+        .container {
+            width: 750px;
+            margin: 0 auto;
+        }
+
+        .block { display: block }
+        .inline-block { display: inline-block; }
+
+        .format { 
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        .none:has(#activate-none:checked) .format {
+            display: none;
+        }
+
+        .example-bbox {
+            padding: 15px;
+            width: 100%;
+            border: 15px solid red;
+        }
+
+        .bbox:has(#activate-border-box:checked) .example-bbox {
+            box-sizing: border-box;
+        }
+
+        .container.bbox {
+            border: 1px solid #000;
+            padding: 0 0 20px 0;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="title">Exemplos de layout</h1>
+
+    <div class="container">
+        <h2>Block</h2>
+        <span>Este é um span comum</span>
+        <span class="format block">
+            Este é um span com display <strong>block</strong>
+        </span>
+    </div>
+
+    <div class="container">
+        <h2>Inline block</h2>
+        <div class="format">
+            Esta é uma div comum
+        </div>
+        
+        <div class="inline-block format">Esta div está com inline-block</div>
+        <div class="inline-block format">Esta div está com inline-block</div>
+    </div>
+
+    <div class="container none">
+        <h2>display: none</h2>
+        <input type="checkbox" id="activate-none"> <label for="activate-none">Ativar display: none;</label>
+        <div class="format">Esta div irá ficar desaparecer quando <strong>display: none</strong> estiver ativo.</div>
+    </div>
+
+    <div class="container bbox">
+        <h2>box-sizing</h2>
+        <input type="checkbox" id="activate-border-box"> <label for="activate-border-box">Ativar <strong>box-sizing: border-box</strong></label>
+        <div class="format example-bbox">Esta div tem o seguinte CSS:<br />
+            padding: 15px; <br />
+            border: 15px;<br />
+            width: 100%;<br />
+        </div>
+    </div>
+</body>
+</html>
