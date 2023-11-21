@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos position</title>
+
+    <style>
+        .container {
+            width: 750px;
+            margin: 0 auto;
+        }
+        .title { text-align: center; }
+        
+        .static { position: static; }
+        .relative { position: relative; }
+        .absolute { position: absolute; }
+
+        .format {
+            padding: 7px;
+            border: 1px solid #333;
+        }
+
+        .example-absolute {
+            background: #333;
+            color: #fff;
+            padding: 15px;
+            margin: 10px 0 0 0;
+            position: absolute;
+            left: 0;
+        }
+        .example-relative {
+            position: relative;
+        }
+
+        .example-relative:has(#toggle-relative:checked){
+            position: static;
+        }
+
+        .z-index-base {
+            position: absolute;
+            width: 100%;
+            border: 1px solid #333;
+            padding: 0 15px;
+            height: 50px;
+            color: #fff;
+        }
+
+        .z-index-1 {
+            z-index: 1;
+            top: 0px;
+            background: rgba(0, 0, 0, .9);
+        }
+
+        .z-index-2 {
+            z-index: 2;
+            top: 20px;
+            left: 20px;
+            background: rgba(150, 0, 0, .9);
+        }
+
+        .z-index-3 {
+            z-index: 3;
+            top: 40px;
+            left: 40px;
+            background: rgba(0, 0, 150, .9);
+        }
+
+        .z-index-container {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Position</h1>
+
+    <div class="container">
+        <h2>position: static</h2>
+        <p>É o posicionamento padrão onde o elemento segue o fluxo comum da página.</p>
+        <div class="format static">
+            Esta div tem position: static;
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>position: relative</h2>
+        <p>Habilita o uso do z-index para manipular a posição do elemento no stacking context. Também contém dentro dele qualquer div com position: absolute;</p>
+        <div class="format example-relative">
+            <input type="checkbox" id="toggle-relative"> <label for="toggle-relative">Desativar position:relative;</label>
+            <div class="example-absolute">Está div tem position: absolute;</div>
+        </div>
+    </div>
+
+    <div class="container z-index-container">
+        <h2>z-index</h2>
+        <div class="relative">
+            <div class="z-index-1 z-index-base">z-index: 1</div>
+            <div class="z-index-2 z-index-base">z-index: 2</div>
+            <div class="z-index-3 z-index-base">z-index: 3</div>
+        </div>
+    </div>
+</body>
+</html>
