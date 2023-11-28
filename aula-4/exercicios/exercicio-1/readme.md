@@ -12,6 +12,6 @@ Um capo do tipo "text", com a propriedate name="nome"
 Labe: Idade
 Um capo do tipo "number", com a propriedate name="idade"
 
-### Campo 1
+### Campo 3
 Label: Qual comida você prefere?
 Pelo menos 3 campos do tipo "radio" com opções de comida. Os campos devem ter o mesmo atributo name. name="comida" e cada um com seu respectivo label
