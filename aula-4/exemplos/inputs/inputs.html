@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tipos de input</h1>
+        <form action="#">
+            <div class="group">
+                <h3>Text</h3>
+                <div class="code">&lt;input type="text" /&gt;</div>
+                <input type="text" class="campo-padrao" placeholder="Este é um campo de texto">
+            </div>
+
+            <div class="group">
+                <h3>Number</h3>
+                <div class="code">&lt;input type="number" /&gt;</div>
+                <input type="number" class="campo-padrao" placeholder="Campo number">
+            </div>
+
+            <div class="group">
+                <h3>Checkbox</h3>
+                <div class="code">&lt;input type="checkbox" /&gt;</div>
+                <input type="checkbox" placeholder="Este é um campo de texto" id="ex-checkbox"> <label for="ex-checkbox">Label para o checkbox</label>
+            </div>
+
+            <div class="group">
+                <h3>Radio</h3>
+                <div class="code">&lt;input type="radio" name="ex-radio" /&gt;</div>
+                <input type="radio" value="1" name="ex-radio" id="ex-radio-1"> <label for="ex-radio-1">Opção 1</label>
+                <input type="radio" value="2" name="ex-radio" id="ex-radio-2"> <label for="ex-radio-2">Opção 2</label>
+            </div>
+
+            <div class="group">
+                <h3>Button</h3>
+                <div class="code">&lt;input type="button" /&gt;</div>
+                <input type="button" value="Botão">
+            </div>
+
+            <div class="group">
+                <h3>Date</h3>
+                <div class="code">&lt;input type="date" /&gt;</div>
+                <input type="date" class="campo-padrao">
+            </div>
+
+            <div class="group">
+                <h3>Time</h3>
+                <div class="code">&lt;input type="time" /&gt;</div>
+                <input type="time" class="campo-padrao">
+            </div>
+
+            <div class="group">
+                <h3>File</h3>
+                <div class="code">&lt;input type="file" /&gt;</div>
+                <input type="file" class="campo-padrao">
+            </div>
+
+            <div class="group">
+                <h3>File com multiplos arquivos</h3>
+                <div class="code">&lt;input type="file" multiple /&gt;</div>
+                <input type="file" class="campo-padrao" multiple>
+            </div>
+
+            <div class="group">
+                <h3>Password</h3>
+                <div class="code">&lt;input type="password" /&gt;</div>
+                <input type="password" class="campo-padrao" placeholder="Digite sua senha">
+            </div>
+
+            <div class="group">
+                <h3>Range</h3>
+                <div class="code">&lt;input type="range" min="0" max="50" /&gt;</div>
+                <input type="range" min="0" max="50" placeholder="Este é um campo de texto">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

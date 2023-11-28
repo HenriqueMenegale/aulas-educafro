@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tipos de input</h1>
+        <form action="#" method="get">
+            <div class="group">
+                <p>
+                    <input type="text" name="nome" class="campo-padrao" required placeholder="Nome">
+                </p>
+                <p>
+                    <input type="text" name="email" class="campo-padrao" placeholder="Email" pattern="[a-z]{1,}@[a-z]{3,}.*" title="Insira um email válido" required>
+                </p>
+                <p>
+                    <label for="campo-nascimento">Data de nascimento</label><Br />
+                    <input type="date" class="campo-padrao" id="campo-nascimento">
+                </p>
+                <p>
+                    <input type="password" name="senha" class="campo-padrao" required placeholder="Senha">
+                </p>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

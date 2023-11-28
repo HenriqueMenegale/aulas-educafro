@@ -1,0 +1,55 @@
+body {
+    padding:0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.styled-label {
+    font-weight: bolder;
+    display: block;
+    margin: 0 0 5px 0;
+}
+input[type=text], input[type=number] {
+    border:1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    outline-color: #abeb34;
+    min-width: 300px;
+}
+
+input[type=submit] {
+    background: #343499;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+}
+
+#resposta-form {
+    display: none;
+    border-bottom: 1px solid #333;
+    padding: 20px 0;
+}
+
+#resposta-form.show {
+    display: block;
+}
+
+#resposta-form .alert {
+    border: 1px solid #1a8a38;
+    background: #cfffdb;
+    padding: 20px;
+    margin: 0 0 15px 0;
+}
+
+@media (max-width: 750px){
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+}

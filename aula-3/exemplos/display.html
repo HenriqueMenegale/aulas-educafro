@@ -42,10 +42,29 @@
             border: 1px solid #000;
             padding: 0 0 20px 0;
         }
+
+        .inline-comum {
+            display: inline;
+        }
+
+        .sub-menu {
+            display: none;
+        }
+
+        .menu:hover .sub-menu {
+            display: block;
+        }
     </style>
 
 </head>
 <body>
+
+    <div class="container">
+        <div class="menu">
+            menu aqui
+            <div class="sub-menu">Sub menu aqui</div>
+        </div>
+    </div>
     <h1 class="title">Exemplos de layout</h1>
 
     <div class="container">
@@ -62,7 +81,7 @@
             Esta é uma div comum
         </div>
         
-        <div class="inline-block format">Esta div está com inline-block</div>
+        <div class="inline-comum format">Esta div está com inline-block</div>
         <div class="inline-block format">Esta div está com inline-block</div>
     </div>
 

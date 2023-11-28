@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Trabalhando com formulários</h1>
+        <!-- Não edite aqui -->
+        <div id="resposta-form">
+            <div class="alert">
+                Parabéns! O seu formulário está correto!
+            </div>
+        </div>
+        <!-- Pode editar daqui para baixo -->
+        <form action="#">
+            <!-- Adiciona os campos do seu formulário abaixo -->
+            
+            
+
+            <!-- Não precisa editar mais nada a partir daqui -->
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+
+<script>
+    //Não edite nada deste script
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("nome");
+    const age = params.get("idade");
+    const food = params.get("comida");
+    if(name && age && food){
+        const el = document.getElementById("resposta-form");
+        el.classList.add("show");
+        el.innerHTML += `Olá, <strong>${name}</strong>. Você tem <strong>${age} anos</strong> e prefere <strong>${food}</strong>`;
+    }
+</script>
+</html>
