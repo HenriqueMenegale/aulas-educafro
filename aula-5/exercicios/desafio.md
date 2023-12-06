@@ -2,8 +2,8 @@
 
 O desafio será escrever uma função chamada *verificaNota*, ela irá somar três notas e dizer se a média delas é maior do que 6.
 
-• Caso a média seja maior ou igual a 6, escreve no console "Passou de ano"
-• Caso a média seja menor que 6, escreve no console "Recuperação"
+- Caso a média seja maior ou igual a 6, escreve no console "Passou de ano"
+- Caso a média seja menor que 6, escreve no console "Recuperação"
 
 Exemplos:
 
