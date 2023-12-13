@@ -3,8 +3,8 @@ function sorteiaNumero(numeroMaximo) {
     var numeroAleatorio = Math.random();
     numeroAleatorio *= numeroMaximo;
 
-    //Math.floor arredonda para baixo o número.
-    numeroAleatorio = Math.floor(numeroAleatorio);
+    //Math.floor arredonda
+    numeroAleatorio = Math.round(numeroAleatorio);
 
     return numeroAleatorio;
 }
@@ -31,5 +31,5 @@ function encontraNumero(numeroProcurado, numeroMaximo){
     console.log(`Numeros unicos sorteados: ${numerosSorteados}`);
 }
 
-encontraNumero(5, 100);
+encontraNumero(5, 60);
 
