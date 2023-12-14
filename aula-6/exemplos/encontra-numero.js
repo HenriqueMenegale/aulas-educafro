@@ -32,4 +32,3 @@ function encontraNumero(numeroProcurado, numeroMaximo){
 }
 
 encontraNumero(5, 60);
-
