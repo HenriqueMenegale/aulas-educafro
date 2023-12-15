@@ -7,7 +7,7 @@ Usando o loop for, crie um função que faz uma contagem regressiva.
 - Ela deverá com console.log escrever cada número a partir do máximo até chegar em zero.
 
 Exemplos:
-contagemRegressiva(5);
+    contagemRegressiva(5);
 
 Irá escrever
 5
