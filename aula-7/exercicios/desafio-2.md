@@ -11,3 +11,8 @@ Se o usuário digitar "Cachorro gato cavalo elefante". O texto deverá ser conve
 - gato
 - cavalo
 - elefante
+
+### Referência
+
+Você pode utilizar a função split para solucionar este desafio.
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split
