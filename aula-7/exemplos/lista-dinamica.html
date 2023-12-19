@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Dinâmica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Minha lista</h1>
+        <form id="form-adiciona-item">
+            <input type="text" id="campo-item" placeholder="Digite um item"> <input type="submit">
+        </form>
+        <ul id="lista">
+        </ul>
+    </div>    
+</body>
+<script>
+    const items = [];
+    const elLista = document.getElementById("lista");
+    const elForm = document.getElementById("form-adiciona-item");
+    const elInput = document.getElementById("campo-item");
+
+    function atualizaLista(){
+        elLista.innerHTML = "";
+        items.forEach((item) => {
+            elLista.innerHTML += `<li>${item}</li>`;
+        })    
+    }
+
+    function adicionaItem(e){
+        e.preventDefault();
+        const novoItem = elInput.value;
+        elInput.value = '';
+        items.push(novoItem);
+        atualizaLista();
+    }
+
+    elForm.addEventListener("submit", adicionaItem);
+</script>
+</html>

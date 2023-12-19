@@ -1,0 +1,17 @@
+.container {
+    width: 700px;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+@media(max-width: 700px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }   
+}

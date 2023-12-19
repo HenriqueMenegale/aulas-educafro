@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" id="form-soma">
+            <p>
+                <label for="valor1">Valor 1</label>
+                <input type="number" id="valor1">
+            </p>
+
+            <p>
+                <label for="valor1">Valor 2</label>
+                <input type="number" id="valor2">
+            </p>
+
+            <input type="submit" value="calcular">
+        </form>
+    </div>
+</body>
+
+<script>
+    const form = document.getElementById("form-soma");
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const valor1 = parseInt(document.getElementById("valor1").value, 10);
+        const valor2 = parseInt(document.getElementById("valor2").value, 10);
+        const resultado = soma(valor1, valor2);
+        alert(resultado);
+    })
+
+    function soma(a, b){
+        return a + b;
+    }
+</script>
+</html>

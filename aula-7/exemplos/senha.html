@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Campo senha</h2>
+        <input type="password" id="campo-senha" placeholder="Digite sua senha"> <button id="exibe-senha">👀</button>
+    </div>
+</body>
+
+<script>
+    const botaoSenha = document.getElementById("exibe-senha");
+    botaoSenha.addEventListener("click", exibeSenha);
+    
+    function exibeSenha(){
+        const campoSenha = document.getElementById("campo-senha");
+        campoSenha.type = (campoSenha.type === "password") ? "text" : "password"
+    }
+</script>
+</html>

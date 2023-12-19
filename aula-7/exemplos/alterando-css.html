@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterando CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container bg-white">
+        <h1>
+            Selecione a cor de fundo
+        </h1>
+        <button class="button" data-cor="#6e1915">Vermelho</button>
+        <button class="button" data-cor="#6dc976">Verde</button>
+        <button class="button" data-cor="#037ffc">Azul</button>    
+    </div>
+</body>
+<script>
+
+    const botoes = document.getElementsByClassName("button");
+    
+    for(let i =0; i < botoes.length; i++){
+        botoes[i].addEventListener('click', mudaCor);
+    } 
+    
+    function mudaCor(e){
+        const cor = e.target.dataset.cor;
+        document.body.style.backgroundColor = cor;
+    }
+</script>
+</html>

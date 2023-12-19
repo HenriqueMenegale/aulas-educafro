@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Evite executar funções javascript usando o atributo dentro da tag como está abaixo -->
+        <input type="button" value="Clique aqui" onclick="(() => alert('Obrigado por clicar.'))()">
+
+
+        <button id="botao-2">Clique aqui também</button>
+    </div>
+</body>
+
+<script>
+    const exibeMensagem = (mensagem) => alert(mensagem);
+
+    const botao2 = document.getElementById("botao-2")?.addEventListener("click", () => exibeMensagem('Obrigado por clicar também.'))
+</script>
+</html>
