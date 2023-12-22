@@ -13,3 +13,7 @@ Se o usuário digitar o número 6, o resultado deverá ser:
 Se o usuário digitar o número 9, o resultado deverá ser:
 
 ##-##-##-##-#
+
+### Referência
+
+Operador %
