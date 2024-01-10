@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="desktop">
+            Telas grandes como notebooks e monitores maiores
+            <p>
+                <span class="size"></span>px
+            </p>
+        </div>
+
+        <div class="tablet">
+            Telas médias como tablets
+            <p>
+                <span class="size"></span>px
+            </p>
+        </div>
+
+        <div class="mobile">
+            Telas pequenas como celulares
+            <p>
+                <span class="size"></span>px
+            </p>
+        </div>
+    </div>
+</body>
+
+<script>
+    // atualiza o tamanho da tela
+    function updateSize(size){
+        for(element of sizeElements) {
+            element.innerHTML = size;
+        };
+    }
+
+    // encontra todos os elementos com a classe size
+    const sizeElements = document.getElementsByClassName("size");
+    
+    //  pega a largura da tela
+    let width = window.innerWidth;
+    
+    window.addEventListener("resize", (e) => {
+        updateSize(window.innerWidth);
+    });
+
+    updateSize(width);
+</script>
+</html>

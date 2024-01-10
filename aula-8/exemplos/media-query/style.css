@@ -1,0 +1,33 @@
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 2em;
+    text-align: center;
+}
+
+.tablet, .mobile, .desktop {
+    display: none;
+}
+
+@media(min-width: 769px){
+    .desktop {
+        display: block;
+    }
+}
+
+@media(max-width: 768px) and (min-width: 481px) {
+    .tablet {
+        display: block;
+    }
+}
+
+@media(max-width: 480px) {
+    .mobile {
+        display: block;
+    }
+}

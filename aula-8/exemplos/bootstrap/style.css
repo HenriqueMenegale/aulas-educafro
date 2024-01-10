@@ -1,0 +1,30 @@
+#header {
+    background: #333;
+    color: #fff;
+}
+#header a {
+    color: #fff;
+}
+
+#header a:hover {
+    color: orange;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.banner {
+    background: url('img/banner.jpg') no-repeat;
+    width: 100%;
+    background-size:cover;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.card img {
+    height: 240px;
+}
+
