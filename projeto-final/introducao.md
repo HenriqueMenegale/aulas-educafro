@@ -14,7 +14,9 @@ O tema do seu projeto é livre, pode ser um blog pessoal, um site com seu currí
 - É permitido o uso de bibliotecas como bootstrap, porém é obrigatório que o projeto contenha pelo menos um arquivo CSS personalizado
 - O projeto deve incluir um menu de navegação, seja por âncoras que fazem a página rolar ou links para outras páginas
 - O projeto deve incluir pelo menos um elemento de formulário, em qualquer uma das páginas. Exemplos:
+
 Formulário simples para cadastrar na newsletter
+
 Formulário de contato
 
 ## Referências
@@ -31,6 +33,7 @@ https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a
 
 ### Formulários
 https://developer.mozilla.org/pt-BR/docs/Learn/Forms/Your_first_form
+
 https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Input
 
 ### Seletores CSS
